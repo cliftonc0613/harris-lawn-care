@@ -1188,18 +1188,18 @@ section {
     box-shadow: var(--shadow-md);
 }
 
+.testimonial-stars {
+    margin-bottom: var(--space-sm);
+}
+
+.testimonial-stars .star-icon {
+    color: #FFD700;
+    font-size: 1.25rem !important;
+}
+
 .testimonial-quote {
     flex: 1;
     margin-bottom: var(--space-md);
-}
-
-.quote-icon {
-    color: var(--color-sage);
-    opacity: 0.3;
-    font-size: 48px !important;
-    margin-bottom: var(--space-sm);
-    display: block;
-    transform: rotate(180deg);
 }
 
 .testimonial-quote p {
