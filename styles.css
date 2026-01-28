@@ -1047,12 +1047,12 @@ section {
 
 .contact-card-icon .material-icons {
     font-size: 28px;
-    color: var(--color-gold);
+    color: white;
 }
 
 .details-icon .material-icons {
     font-size: 24px;
-    color: var(--color-gold);
+    color: white;
 }
 
 .benefits-list .material-icons {
