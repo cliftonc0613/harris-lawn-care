@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Google Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -18,7 +20,7 @@
     <nav class="nav">
         <div class="nav-container">
             <a href="#" class="nav-logo">
-                <svg class="logo-icon" viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><path d="M17,8C8,10,5.9,16.17,3.82,21.34L5.71,22L6.66,19.7C7.14,19.87,7.64,20,8,20C19,20,22,3,22,3C21,5,14,5.25,9,6.25C4,7.25,2,11.5,2,13.5C2,15.5,3.75,17.25,3.75,17.25C7,8,17,8,17,8Z"/></svg>
+                <span class="material-icons logo-icon">eco</span>
                 <span class="logo-text">Harris<span class="logo-accent">Pro</span></span>
             </a>
             <button class="nav-toggle" aria-label="Toggle menu">
@@ -43,7 +45,7 @@
         </div>
         <div class="hero-content">
             <div class="hero-badge">
-                <span class="badge-icon">★</span>
+                <span class="material-icons badge-icon">star</span>
                 <span>Trusted Since 2009</span>
             </div>
             <h1 class="hero-title">
@@ -55,7 +57,7 @@
             </p>
             <div class="hero-cta">
                 <a href="tel:8645087062" class="btn btn-primary">
-                    <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z"/></svg>
+                    <span class="material-icons btn-icon">phone</span>
                     <span class="btn-text">(864) 508-7062</span>
                 </a>
                 <a href="#services" class="btn btn-secondary">View Services</a>
@@ -93,62 +95,42 @@
         <div class="services-grid">
             <article class="service-card">
                 <div class="service-icon">
-                    <svg viewBox="0 0 64 64" fill="none">
-                        <path d="M32 8v48M16 24l16-16 16 16" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M12 56h40" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
-                    </svg>
+                    <span class="material-icons">grass</span>
                 </div>
                 <h3 class="service-title">Lawn Mowing</h3>
                 <p class="service-desc">Precision cutting at the perfect height for your grass type, with clean edges and thorough cleanup.</p>
             </article>
             <article class="service-card">
                 <div class="service-icon">
-                    <svg viewBox="0 0 64 64" fill="none">
-                        <circle cx="32" cy="32" r="20" stroke="currentColor" stroke-width="3"/>
-                        <path d="M32 20v12l8 8" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
+                    <span class="material-icons">schedule</span>
                 </div>
                 <h3 class="service-title">Regular Maintenance</h3>
                 <p class="service-desc">Weekly or bi-weekly service plans to keep your lawn in pristine condition year-round.</p>
             </article>
             <article class="service-card">
                 <div class="service-icon">
-                    <svg viewBox="0 0 64 64" fill="none">
-                        <path d="M8 48c0-16 8-32 24-32s24 16 24 32" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
-                        <path d="M20 48c0-8 4-16 12-16s12 8 12 16" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
-                        <path d="M32 32v8" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
-                    </svg>
+                    <span class="material-icons">spa</span>
                 </div>
                 <h3 class="service-title">Fertilization</h3>
                 <p class="service-desc">Seasonal fertilization programs designed to promote thick, green, healthy growth.</p>
             </article>
             <article class="service-card">
                 <div class="service-icon">
-                    <svg viewBox="0 0 64 64" fill="none">
-                        <path d="M32 8c12 8 20 16 20 28a20 20 0 01-40 0c0-12 8-20 20-28z" stroke="currentColor" stroke-width="3"/>
-                        <path d="M32 48V28" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
-                    </svg>
+                    <span class="material-icons">bug_report</span>
                 </div>
                 <h3 class="service-title">Weed Control</h3>
                 <p class="service-desc">Targeted treatments to eliminate weeds while protecting your lawn and landscape.</p>
             </article>
             <article class="service-card">
                 <div class="service-icon">
-                    <svg viewBox="0 0 64 64" fill="none">
-                        <rect x="12" y="28" width="40" height="24" rx="4" stroke="currentColor" stroke-width="3"/>
-                        <path d="M20 28V16a12 12 0 0124 0v12" stroke="currentColor" stroke-width="3"/>
-                        <circle cx="32" cy="40" r="4" fill="currentColor"/>
-                    </svg>
+                    <span class="material-icons">content_cut</span>
                 </div>
                 <h3 class="service-title">Shrub & Hedge Trimming</h3>
                 <p class="service-desc">Expert shaping and maintenance for all your shrubs, hedges, and ornamental plants.</p>
             </article>
             <article class="service-card">
                 <div class="service-icon">
-                    <svg viewBox="0 0 64 64" fill="none">
-                        <path d="M12 52l20-36 20 36" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M20 52l12-20 12 20" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
+                    <span class="material-icons">eco</span>
                 </div>
                 <h3 class="service-title">Leaf Removal</h3>
                 <p class="service-desc">Complete fall cleanup services to protect your lawn and maintain curb appeal.</p>
@@ -167,19 +149,19 @@
                 <p>We understand the unique challenges of maintaining lawns in South Carolina's climate—from the hot, humid summers to the unpredictable spring rains. Our experience means we know exactly what your lawn needs, when it needs it.</p>
                 <div class="about-features">
                     <div class="feature">
-                        <span class="feature-icon">✓</span>
+                        <span class="material-icons feature-icon">check_circle</span>
                         <span>Locally owned & operated</span>
                     </div>
                     <div class="feature">
-                        <span class="feature-icon">✓</span>
+                        <span class="material-icons feature-icon">check_circle</span>
                         <span>Licensed & insured</span>
                     </div>
                     <div class="feature">
-                        <span class="feature-icon">✓</span>
+                        <span class="material-icons feature-icon">check_circle</span>
                         <span>Free estimates</span>
                     </div>
                     <div class="feature">
-                        <span class="feature-icon">✓</span>
+                        <span class="material-icons feature-icon">check_circle</span>
                         <span>Satisfaction guaranteed</span>
                     </div>
                 </div>
@@ -200,7 +182,7 @@
             <h2 class="cta-title">Ready for a Lawn You'll Love?</h2>
             <p class="cta-subtitle">Get your free estimate today. No pressure, no obligations—just honest advice from lawn care experts.</p>
             <a href="tel:8645087062" class="btn btn-primary btn-large">
-                <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z"/></svg>
+                <span class="material-icons btn-icon">phone</span>
                 <span class="btn-text">Call (864) 508-7062</span>
             </a>
         </div>
@@ -218,7 +200,7 @@
         <div class="contact-cards">
             <a href="tel:8645087062" class="contact-card">
                 <div class="contact-card-icon">
-                    <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><path d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z"/></svg>
+                    <span class="material-icons">phone</span>
                 </div>
                 <h3 class="contact-card-title">Call Us</h3>
                 <p class="contact-card-value">(864) 508-7062</p>
@@ -227,7 +209,7 @@
             
             <a href="mailto:harris.lawncare@email.com" class="contact-card">
                 <div class="contact-card-icon">
-                    <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><path d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z"/></svg>
+                    <span class="material-icons">email</span>
                 </div>
                 <h3 class="contact-card-title">Email Us</h3>
                 <p class="contact-card-value">harris.lawncare@email.com</p>
@@ -236,7 +218,7 @@
             
             <div class="contact-card">
                 <div class="contact-card-icon">
-                    <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><path d="M12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5M12,2A7,7 0 0,0 5,9C5,14.25 12,22 12,22C12,22 19,14.25 19,9A7,7 0 0,0 12,2Z"/></svg>
+                    <span class="material-icons">location_on</span>
                 </div>
                 <h3 class="contact-card-title">Visit Us</h3>
                 <p class="contact-card-value">Anderson, SC</p>
@@ -248,7 +230,7 @@
         <div class="contact-details">
             <div class="business-hours">
                 <div class="details-icon">
-                    <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22C6.47,22 2,17.5 2,12A10,10 0 0,1 12,2M12.5,7V12.25L17,14.92L16.25,16.15L11,13V7H12.5Z"/></svg>
+                    <span class="material-icons">schedule</span>
                 </div>
                 <h3>Business Hours</h3>
                 <ul class="hours-list">
@@ -260,28 +242,28 @@
             
             <div class="why-choose-us">
                 <div class="details-icon">
-                    <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M17,8C8,10,5.9,16.17,3.82,21.34L5.71,22L6.66,19.7C7.14,19.87,7.64,20,8,20C19,20,22,3,22,3C21,5,14,5.25,9,6.25C4,7.25,2,11.5,2,13.5C2,15.5,3.75,17.25,3.75,17.25C7,8,17,8,17,8Z"/></svg>
+                    <span class="material-icons">eco</span>
                 </div>
                 <h3>Why Choose Harris Pro?</h3>
                 <ul class="benefits-list">
                     <li>
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"/></svg>
+                        <span class="material-icons">check</span>
                         <span>15+ years of local experience</span>
                     </li>
                     <li>
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"/></svg>
+                        <span class="material-icons">check</span>
                         <span>Fully licensed and insured</span>
                     </li>
                     <li>
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"/></svg>
+                        <span class="material-icons">check</span>
                         <span>Free, no-obligation estimates</span>
                     </li>
                     <li>
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"/></svg>
+                        <span class="material-icons">check</span>
                         <span>100% satisfaction guaranteed</span>
                     </li>
                     <li>
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"/></svg>
+                        <span class="material-icons">check</span>
                         <span>Flexible scheduling options</span>
                     </li>
                 </ul>
@@ -310,7 +292,7 @@
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-brand">
-                <svg class="footer-logo-icon" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M17,8C8,10,5.9,16.17,3.82,21.34L5.71,22L6.66,19.7C7.14,19.87,7.64,20,8,20C19,20,22,3,22,3C21,5,14,5.25,9,6.25C4,7.25,2,11.5,2,13.5C2,15.5,3.75,17.25,3.75,17.25C7,8,17,8,17,8Z"/></svg>
+                <span class="material-icons footer-logo-icon">eco</span>
                 <span class="logo-text">Harris<span class="logo-accent">Pro</span></span>
             </div>
             <p class="footer-tagline">Professional lawn care for Anderson, SC since 2009.</p>
