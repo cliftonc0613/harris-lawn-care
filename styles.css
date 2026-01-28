@@ -1,17 +1,17 @@
 /* Harris Professional Lawn Care - Professional Website Styles */
 
 :root {
-    /* Color Palette - Natural & Premium */
-    --color-forest: #1a3a2f;
-    --color-forest-light: #2d5a47;
-    --color-sage: #4a7c59;
-    --color-mint: #8cb48c;
-    --color-gold: #d4a853;
-    --color-gold-light: #e8c77b;
-    --color-cream: #f8f5f0;
-    --color-cream-dark: #ebe5db;
-    --color-charcoal: #2c2c2c;
-    --color-gray: #666;
+    /* Color Palette - Based on Harris Logo */
+    --color-forest: #1a5c2e;
+    --color-forest-light: #257a3d;
+    --color-sage: #3cb043;
+    --color-mint: #6fce78;
+    --color-gold: #3cb043;
+    --color-gold-light: #4ec955;
+    --color-cream: #f8faf8;
+    --color-cream-dark: #e8f0e8;
+    --color-charcoal: #1a1a1a;
+    --color-gray: #555;
     --color-white: #ffffff;
     
     /* Typography */
@@ -107,19 +107,16 @@ h1, h2, h3, h4, h5, h6 {
 .nav-logo {
     display: flex;
     align-items: center;
-    gap: var(--space-xs);
-    font-family: var(--font-display);
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: var(--color-forest);
 }
 
-.logo-icon {
-    font-size: 1.75rem;
+.logo-image {
+    height: 50px;
+    width: auto;
+    transition: var(--transition-base);
 }
 
-.logo-accent {
-    color: var(--color-gold);
+.nav-logo:hover .logo-image {
+    transform: scale(1.02);
 }
 
 .nav-toggle {
@@ -860,16 +857,15 @@ section {
 .footer-brand {
     display: inline-flex;
     align-items: center;
-    gap: var(--space-xs);
-    font-family: var(--font-display);
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: var(--color-cream);
-    margin-bottom: var(--space-sm);
+    justify-content: center;
+    margin-bottom: var(--space-md);
 }
 
-.footer-logo-icon {
-    color: var(--color-mint);
+.footer-logo-image {
+    height: 60px;
+    width: auto;
+    filter: brightness(0) invert(1);
+    opacity: 0.95;
 }
 
 .footer-tagline {
@@ -1027,15 +1023,7 @@ section {
     -webkit-font-smoothing: antialiased;
 }
 
-.logo-icon.material-icons {
-    font-size: 28px;
-    color: var(--color-gold);
-}
-
-.footer-logo-icon.material-icons {
-    font-size: 24px;
-    color: var(--color-gold);
-}
+/* Logo image styles handled above */
 
 .badge-icon.material-icons {
     font-size: 16px;
