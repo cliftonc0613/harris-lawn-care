@@ -1060,3 +1060,26 @@ section {
     color: var(--color-sage);
     margin-right: 0.5rem;
 }
+
+/* Facebook Button */
+.btn-facebook {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #1877F2;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.btn-facebook:hover {
+    background-color: #0d65d9;
+    color: white;
+}
+
+.btn-facebook svg {
+    fill: currentColor;
+}
