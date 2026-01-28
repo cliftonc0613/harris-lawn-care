@@ -981,6 +981,14 @@ section {
         right: 0;
     }
     
+    .nav-links.active a {
+        color: var(--color-forest);
+    }
+    
+    .nav-links.active a:hover {
+        color: var(--color-sage);
+    }
+    
     .nav-cta {
         width: 100%;
         text-align: center;
