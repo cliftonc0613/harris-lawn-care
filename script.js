@@ -245,5 +245,117 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
+    // =====================
+    // Gallery Lightbox
+    // =====================
+    const galleryItems = document.querySelectorAll('.gallery-item');
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const lightboxCounter = document.getElementById('lightbox-counter');
+    const lightboxClose = document.querySelector('.lightbox-close');
+    const lightboxPrev = document.querySelector('.lightbox-prev');
+    const lightboxNext = document.querySelector('.lightbox-next');
+    
+    let currentIndex = 0;
+    const totalImages = galleryItems.length;
+    
+    // Get all image sources
+    const imageSources = Array.from(galleryItems).map(item => 
+        item.querySelector('img').src
+    );
+    
+    function openLightbox(index) {
+        currentIndex = index;
+        updateLightbox();
+        lightbox.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+    
+    function closeLightbox() {
+        lightbox.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+    
+    function updateLightbox() {
+        lightboxImg.src = imageSources[currentIndex];
+        lightboxCounter.textContent = `${currentIndex + 1} / ${totalImages}`;
+    }
+    
+    function nextImage() {
+        currentIndex = (currentIndex + 1) % totalImages;
+        updateLightbox();
+    }
+    
+    function prevImage() {
+        currentIndex = (currentIndex - 1 + totalImages) % totalImages;
+        updateLightbox();
+    }
+    
+    // Event listeners
+    galleryItems.forEach((item, index) => {
+        item.addEventListener('click', () => openLightbox(index));
+    });
+    
+    if (lightboxClose) {
+        lightboxClose.addEventListener('click', closeLightbox);
+    }
+    
+    if (lightboxPrev) {
+        lightboxPrev.addEventListener('click', prevImage);
+    }
+    
+    if (lightboxNext) {
+        lightboxNext.addEventListener('click', nextImage);
+    }
+    
+    // Close on backdrop click
+    if (lightbox) {
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) {
+                closeLightbox();
+            }
+        });
+    }
+    
+    // Keyboard navigation
+    document.addEventListener('keydown', (e) => {
+        if (!lightbox || !lightbox.classList.contains('active')) return;
+        
+        switch(e.key) {
+            case 'Escape':
+                closeLightbox();
+                break;
+            case 'ArrowLeft':
+                prevImage();
+                break;
+            case 'ArrowRight':
+                nextImage();
+                break;
+        }
+    });
+    
+    // Touch swipe support for lightbox
+    let touchStartX = 0;
+    let touchEndX = 0;
+    
+    if (lightbox) {
+        lightbox.addEventListener('touchstart', (e) => {
+            touchStartX = e.changedTouches[0].screenX;
+        }, { passive: true });
+        
+        lightbox.addEventListener('touchend', (e) => {
+            touchEndX = e.changedTouches[0].screenX;
+            const diff = touchStartX - touchEndX;
+            
+            if (Math.abs(diff) > 50) {
+                if (diff > 0) {
+                    nextImage();
+                } else {
+                    prevImage();
+                }
+            }
+        }, { passive: true });
+    }
+
     console.log('🌿 Harris Professional Lawn Care - Website Initialized');
 });
